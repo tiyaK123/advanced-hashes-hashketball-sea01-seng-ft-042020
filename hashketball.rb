@@ -100,8 +100,13 @@ hash = {:home => {:team_name =>"Brooklyn Nets",:colors => ["Black","White"],
 end 
 
 def num_points_scored(player)
-  game_hash.each do |home_or_team, team|
-    team.each do |a_team, person|
+  game_hash.each do |teams, info|
+    info[:player_name].each do |person|
+      if person[:player_name] == player 
+        return person[:points]
+      end
+    end
+  end
       
 end 
 
