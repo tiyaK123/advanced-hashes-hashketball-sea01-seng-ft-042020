@@ -141,10 +141,12 @@ def player_numbers(team)
       if info[:team_name] == team
     info.each do |k, v|
       if k == :players
-        
-      array.push(info[:player_name][:number])
+        v.each do |player|
+      array.push(player[:number])
     end
   end
-else 
-  
+end
+end
+end
+array
 end
