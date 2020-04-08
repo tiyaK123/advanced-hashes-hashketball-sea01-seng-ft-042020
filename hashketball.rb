@@ -151,13 +151,13 @@ end
 array
 end
 
-def player_stats(player_name)
+def player_stats(name)
   game_hash.each do |location, team|
     team.each do |attribute, data|
      if attribute == :players
        data.each do |player, stats|
-        if player == player_name
-          return stats
+        if player == name
+          return player
         end
        end
       end
