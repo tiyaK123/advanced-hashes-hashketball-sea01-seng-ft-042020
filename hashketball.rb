@@ -96,9 +96,7 @@ hash = {:home => {:team_name =>"Brooklyn Nets",:colors => ["Black","White"],
 :blocks => 5, 
 :slam_dunks => 12}
 ]}
-  
 }
-
 end 
 
 
