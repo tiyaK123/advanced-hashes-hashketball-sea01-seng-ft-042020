@@ -99,7 +99,7 @@ hash = {:home => {:team_name =>"Brooklyn Nets",:colors => ["Black","White"],
 }
 end 
 
-def num_points_scored
+def num_points_scored(num)
   game_hash
 end 
 
