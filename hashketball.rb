@@ -158,7 +158,7 @@ def player_stats(name)
      if k == :players
        v.each do |player|
         if player[:player_name] == name
-          
+          player.delete(:player_name)
           return player
         end
        end
