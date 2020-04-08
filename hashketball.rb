@@ -130,7 +130,7 @@ end
 
 def team_names
   game_hash.each do |type, info|
-    info[:team_names]
+    info[:team_name]
 end 
 end
 
