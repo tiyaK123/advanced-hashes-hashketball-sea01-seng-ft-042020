@@ -122,7 +122,7 @@ end
 
 def team_color(team)
   game_hash.each do |teams, info|
-    info[:players].each do |person|
+    info[:colors].each do |person|
       if person[:player_name] == name 
         return person[:shoe]
       end
