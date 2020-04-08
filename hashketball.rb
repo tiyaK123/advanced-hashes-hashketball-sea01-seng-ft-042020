@@ -153,15 +153,14 @@ end
 
 def players_stats(name)
   
-  game_hash.each do |team, info|
-    info.each do | k, v|
-      if k == :players
-        v.each do |player, data|
-          if name == player[:player_name]
-           return data
-         end
-       end
-      end
-     end
-   end
+  game_hash.collect do |team, stats|
+  stats[:players].collect do |player, data|
+
+    if player == player_name
+      playerdata = data
+    end 
+  end 
+ end 
+playerdata
+end 
 end
