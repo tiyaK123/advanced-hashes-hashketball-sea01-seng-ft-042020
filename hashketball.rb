@@ -129,7 +129,8 @@ def team_colors(team)
 end
 
 def team_names
-  
+  game_hash.each do |type, info|
+    info.each do ||
 end 
 
 
