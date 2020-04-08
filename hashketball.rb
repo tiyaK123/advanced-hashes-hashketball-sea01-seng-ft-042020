@@ -134,4 +134,14 @@ def team_names
 end 
 end
 
-def 
+def player_numbers(team)
+  array = []
+  if team == "Brooklyn Nets"
+    game_hash.map do |type, info|
+    info[:player_name].map do |num|
+      array.push(info[:player_name][:number])
+    end
+  end
+else 
+  
+end
