@@ -153,10 +153,12 @@ end
 
 def player_stats(name)
   game_hash.each do |location, team|
+    hash = {}
     team.each do |attribute, data|
      if attribute == :players
        data.each do |player, stats|
         if player == name
+          hash
           return player
         end
        end
