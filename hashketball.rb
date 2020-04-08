@@ -151,11 +151,16 @@ end
 array
 end
 
-def players_stats(name)
-  
-  if game_hash[:home][:players].include?(name)
-    return game_hash[:home][:players][player_name]
-  else 
-    return game_hash[:away][:players][player_name]
+def player_stats(player_name)
+  game_hash.each do |location, team|
+    team.each do |attribute, data|
+     if attribute == :players
+       data.each do |player, stats|
+        if player == player_name
+          return stats
+        end
+       end
+      end
+    end
+  end
 end
-end 
