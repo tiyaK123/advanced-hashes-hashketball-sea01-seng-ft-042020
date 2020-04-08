@@ -157,7 +157,7 @@ def players_stats(name)
     info.each do | k, v|
       if k == :players
         v.each do |player, data|
-          if name == player
+          if name == player[:player_name]
            return data
          end
        end
