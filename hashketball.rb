@@ -150,3 +150,8 @@ end
 end
 array
 end
+
+def players_stats(name)
+  hash= {}
+  
+end
