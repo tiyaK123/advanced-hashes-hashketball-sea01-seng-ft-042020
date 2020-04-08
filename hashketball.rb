@@ -155,9 +155,9 @@ def player_stats(name)
   game_hash.each do |team, info|
     
     info.each do |k, v|
-     if attribute == :players
-       data.each do |player, stats|
-        if player == name
+     if k == :players
+       v.each do |player|
+        if player[:player_name] == name
           
           return player
         end
