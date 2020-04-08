@@ -157,10 +157,10 @@ def players_stats(name)
   stats[:players].collect do |player, data|
 
     if player == player_name
-      playerdata = data
+     return data
     end 
   end 
  end 
-playerdata
-end 
+
+
 end
